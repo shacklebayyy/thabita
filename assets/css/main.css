@@ -1408,6 +1408,53 @@ section,
   }
 }
 
+/* Placeholder tiles for removed images */
+.portfolio .portfolio-card .portfolio-image.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--surface-color), transparent 10%), color-mix(in srgb, var(--background-color), transparent 6%));
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  aspect-ratio: 16/10;
+  min-height: 140px;
+}
+
+.portfolio .portfolio-card .portfolio-image.placeholder .placeholder-icon {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  letter-spacing: 0.06rem;
+}
+
+/* Make hero visual more compact on small devices */
+@media (max-width: 576px) {
+  .hero .hero-visual {
+    min-height: 220px;
+    border-radius: 18px;
+    padding: 1rem;
+  }
+
+  .hero .brand-mark-large {
+    width: 110px;
+    height: 110px;
+    font-size: 2.5rem;
+  }
+
+  .hero .visual-card.card-one,
+  .hero .visual-card.card-two,
+  .hero .visual-card.card-three {
+    display: none;
+  }
+}
+
+/* Improve readability and spacing on very small screens */
+@media (max-width: 400px) {
+  .header .logo h1 { font-size: 18px; }
+  .hero .content h2 { font-size: 1.6rem; }
+  .hero .content .lead { font-size: 1rem; }
+  .resume .resume-wrapper .timeline::before { left: 0.6rem; }
+}
+
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
