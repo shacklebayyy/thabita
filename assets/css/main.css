@@ -856,6 +856,31 @@ section,
   box-shadow: 0 24px 40px rgba(200, 109, 57, 0.25);
 }
 
+.hero .brand-mark-large img.brand-bio-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 26px;
+  display: block;
+}
+
+.about .about-visual img.about-bio-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 28px;
+  display: block;
+}
+
+.signature .signature-mark img.signature-bio-img {
+  width: 86px;
+  height: 52px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
 .hero .visual-card {
   position: absolute;
   border-radius: 24px;
